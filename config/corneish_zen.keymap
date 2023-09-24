@@ -46,10 +46,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB     &kp Q        &kp W        &kp E       &kp R       &kp T                         &kp Y  &kp U       &kp I       &kp O        &kp P           &kp BSPC
-&kp ESCAPE  &mt LSHFT A  &mt LCTRL S  &mt LALT D  &mt LCMD F  &kp G                         &kp H  &mt RCMD J  &mt RALT K  &mt RCTRL L  &mt RSHFT SEMI  &kp RETURN
-&to 0       &kp Z        &kp X        &kp C       &kp V       &kp B                         &kp N  &kp M       &kp COMMA   &kp DOT      &kp FSLH        &to 4
-                                      &mo 3       &mo 2       &mt LS(LA(LC(LCMD))) SPACE    &mo 1  &mo 2       &mo 3
+&kp TAB     &kp Q        &kp W         &kp E        &kp R        &kp T                         &kp Y  &kp U        &kp I        &kp O         &kp P           &kp BSPC
+&kp ESCAPE  &mt LSHFT A  &gqt LCTRL S  &gqt LALT D  &gqt LCMD F  &kp G                         &kp H  &gqt RCMD J  &gqt RALT K  &gqt RCTRL L  &mt RSHFT SEMI  &kp RETURN
+&to 0       &kp Z        &kp X         &kp C        &kp V        &kp B                         &kp N  &kp M        &kp COMMA    &kp DOT       &kp FSLH        &to 4
+                                       &mo 3        &mo 2        &mt LS(LA(LC(LCMD))) SPACE    &mo 1  &mo 2        &mo 3
             >;
         };
 
@@ -100,10 +100,10 @@
 
         colemak_layer {
             bindings = <
-&trans  &kp Q        &kp W        &kp F       &kp P       &kp B     &kp J   &kp L       &kp U       &kp Y        &kp SEMI     &trans
-&trans  &mt LSHFT A  &mt LCTRL R  &mt LALT S  &mt LCMD T  &kp G     &kp M   &mt RCMD N  &mt RALT E  &mt RCTRL I  &mt RSHFT O  &trans
-&trans  &kp Z        &kp X        &kp C       &kp V       &kp D     &kp K   &kp H       &kp COMMA   &kp DOT      &kp FSLH     &trans
-                                  &trans      &trans      &trans    &trans  &trans      &trans
+&trans  &kp Q        &kp W         &kp F        &kp P        &kp B     &kp J   &kp L        &kp U        &kp Y         &kp SEMI     &trans
+&trans  &mt LSHFT A  &gqt LCTRL R  &gqt LALT S  &gqt LCMD T  &kp G     &kp M   &gqt RCMD N  &gqt RALT E  &gqt RCTRL I  &mt RSHFT O  &trans
+&trans  &kp Z        &kp X         &kp C        &kp V        &kp D     &kp K   &kp H        &kp COMMA    &kp DOT       &kp FSLH     &trans
+                                   &trans       &trans       &trans    &trans  &trans       &trans
             >;
 
             label = "COLEMAK";
