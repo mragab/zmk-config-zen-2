@@ -31,10 +31,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB     &kp Q        &kp W        &kp E       &kp R       &kp T         &kp Y  &kp U       &kp I       &kp O        &kp P           &kp BSPC
-&kp ESCAPE  &mt LSHFT A  &mt LCTRL S  &mt LALT D  &mt LCMD F  &kp G         &kp H  &mt RCMD J  &mt RALT K  &mt RCTRL L  &mt RSHFT SEMI  &kp RETURN
-&to 0       &kp Z        &kp X        &kp C       &kp V       &kp B         &kp N  &kp M       &kp COMMA   &kp DOT      &kp FSLH        &to 4
-                                      &mo 3       &mo 2       &mt HYP SPACE &mo 1  &mo 2       &mo 3
+&kp TAB     &kp Q        &kp W        &kp E       &kp R       &kp T                         &kp Y  &kp U       &kp I       &kp O        &kp P           &kp BSPC
+&kp ESCAPE  &mt LSHFT A  &mt LCTRL S  &mt LALT D  &mt LCMD F  &kp G                         &kp H  &mt RCMD J  &mt RALT K  &mt RCTRL L  &mt RSHFT SEMI  &kp RETURN
+&to 0       &kp Z        &kp X        &kp C       &kp V       &kp B                         &kp N  &kp M       &kp COMMA   &kp DOT      &kp FSLH        &to 4
+                                      &mo 3       &mo 2       &mt LS(LA(LC(LCMD))) SPACE    &mo 1  &mo 2       &mo 3
             >;
         };
 
