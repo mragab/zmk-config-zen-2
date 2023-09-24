@@ -10,11 +10,11 @@
 #include <dt-bindings/zmk/keys.h>
 
 &mt {
-    quick-tap-ms = <125>;
+    quick-tap-ms = <250>;
 };
 
 &lt {
-    quick-tap-ms = <125>;
+    quick-tap-ms = <250>;
 };
 
 / {
