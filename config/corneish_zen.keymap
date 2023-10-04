@@ -42,6 +42,20 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        shifts {
+            bindings = <&to 0>;
+            key-positions = <24 35>;
+        };
+
+        funcs {
+            bindings = <&to 4>;
+            key-positions = <41 36>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -57,7 +71,7 @@
             bindings = <
 &kp TAB     &kp Q         &kp W         &kp E        &kp R        &kp T                         &kp Y        &kp U        &kp I        &kp O         &kp P            &kp BSPC
 &kp ESCAPE  &gqt LSHFT A  &gqt LCTRL S  &gqt LALT D  &gqt LCMD F  &kp G                         &kp H        &gqt RCMD J  &gqt RALT K  &gqt RCTRL L  &gqt RSHFT SEMI  &kp RETURN
-&to 0       &kp Z         &kp X         &kp C        &kp V        &kp B                         &kp N        &kp M        &kp COMMA    &kp DOT       &kp FSLH         &to 4
+&kp LSHIFT  &kp Z         &kp X         &kp C        &kp V        &kp B                         &kp N        &kp M        &kp COMMA    &kp DOT       &kp FSLH         &kp RSHIFT
                                         &mo 3        &mo 2        &mt LS(LA(LC(LCMD))) SPACE    &lt 1 SPACE  &mo 2        &mo 3
             >;
         };
