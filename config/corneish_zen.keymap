@@ -36,9 +36,7 @@
             flavor = "tap-preferred";
             quick-tap-ms = <200>;
             tapping-term-ms = <200>;
-            bindings =
-                <&kp>,
-                <&kp>;
+            bindings = <&kp>, <&kp>;
         };
     };
 
@@ -76,8 +74,8 @@
             >;
         };
 
-        lower_layer {
-            label = "BTH_NAV";
+        bluetooth_layer {
+            label = "BTooth";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
@@ -86,14 +84,14 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans    &trans         &trans       &trans     &trans  &trans
-&trans      &kp LSHIFT    &kp LCTRL     &kp LALT      &kp LCMD      &trans          &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans          &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans  &trans
-                                        &trans        &trans        &trans          &trans    &trans         &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                        &trans        &trans        &trans          &trans  &trans  &trans
             >;
         };
 
-        raise_layer {
+        numbers_symbols_layer {
             label = "NUM_SYM";
 
             // -----------------------------------------------------------------------------------------
@@ -113,7 +111,7 @@
         functions_layer {
             bindings = <
 &trans  &kp F1     &kp F2     &kp F3    &kp F4    &kp F5     &kp F6   &kp F7    &kp F8    &kp F9     &kp F10    &trans
-&trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &kp F11    &kp F12  &kp RGUI  &kp RALT  &kp RCTRL  &kp RSHFT  &trans
+&trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LCMD  &kp F11    &kp F12  &kp RCMD  &kp RALT  &kp RCTRL  &kp RSHFT  &trans
 &trans  &trans     &trans     &trans    &trans    &trans     &trans   &trans    &trans    &trans     &trans     &trans
                               &trans    &trans    &trans     &trans   &trans    &trans
             >;
@@ -125,7 +123,7 @@
             bindings = <
 &trans  &kp Q         &kp W         &kp F        &kp P        &kp B     &kp J   &kp L        &kp U        &kp Y         &kp SEMI      &trans
 &trans  &gqt LSHFT A  &gqt LCTRL R  &gqt LALT S  &gqt LCMD T  &kp G     &kp M   &gqt RCMD N  &gqt RALT E  &gqt RCTRL I  &gqt RSHFT O  &trans
-&trans  &kp Z         &kp X         &kp C        &kp V        &kp D     &kp K   &kp H        &kp COMMA    &kp DOT       &kp FSLH      &trans
+&trans  &kp Z         &kp X         &kp C        &kp D        &kp V     &kp K   &kp H        &kp COMMA    &kp DOT       &kp FSLH      &trans
                                     &trans       &trans       &trans    &trans  &trans       &trans
             >;
 
