@@ -71,7 +71,7 @@
 &kp TAB     &kp Q  &kp W  &kp E  &kp R  &kp T                         &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
 &kp ESCAPE  &kp A  &kp S  &kp D  &kp F  &kp G                         &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp RETURN
 &kp LSHIFT  &kp Z  &kp X  &kp C  &kp V  &kp B                         &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHIFT
-                          &mo 4  &mo 3  &mt LS(LA(LC(LCMD))) SPACE    &lt 5 SPACE  &mo 2  &mo 4
+                          &mo 7  &mo 2  &mt LS(LA(LC(LCMD))) SPACE    &lt 5 SPACE  &mo 3  &mo 6
             >;
         };
 
@@ -86,8 +86,8 @@
             label = "COLEMAK";
         };
 
-        num_sym_right_layer {
-            label = "NM_SM_RT";
+        l_num_sym_layer {
+            label = "L_NM_SM";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
@@ -96,15 +96,15 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp N6    &kp N7    &kp N8    &kp N9     &kp N0     &kp BSLH
-&trans  &trans  &trans  &trans  &trans  &trans    &kp RBRC  &kp RCMD  &kp RALT  &kp RCTRL  &kp RSHFT  &kp SQT
-&trans  &trans  &trans  &trans  &trans  &trans    &kp RBKT  &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &trans
-                        &trans  &trans  &trans    &trans    &trans    &trans
+&kp GRAVE  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5      &kp N6    &kp N7    &kp N8    &kp N9  &kp N0     &kp BSLH
+&trans     &kp LSHFT  &kp LCTRL  &kp LALT   &kp LCMD   &kp LBRC    &kp F6    &kp F7    &kp F8    &kp F9  &kp F10    &kp SQT
+&trans     &kp UNDER  &kp PLUS   &kp EQUAL  &kp MINUS  &kp LBKT    &kp RBKT  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp F12
+                                 &trans     &trans     &trans      &trans    &trans    &trans
             >;
         };
 
-        num_sym_left_layer {
-            label = "NM_SM_LT";
+        r_num_sym_layer {
+            label = "R_NM_SM";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
@@ -113,10 +113,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp GRAVE  &kp N1      &kp N2     &kp N3     &kp N4     &kp N5      &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &kp LSHIFT  &kp LCTRL  &kp LALT   &kp LCMD   &kp LBRC    &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &kp UNDER   &kp PLUS   &kp EQUAL  &kp MINUS  &kp LBKT    &trans  &trans  &trans  &trans  &trans  &trans
-                                  &trans     &trans     &trans      &trans  &trans  &trans
+&kp GRAVE  &kp N1     &kp N2    &kp N3     &kp N4     &kp N5      &kp N6    &kp N7    &kp N8    &kp N9     &kp N0     &kp BSLH
+&trans     &kp F1     &kp F2    &kp F3     &kp F4     &kp F5      &kp RBRC  &kp RCMD  &kp RALT  &kp RCTRL  &kp RSHFT  &kp SQT
+&kp F11    &kp UNDER  &kp PLUS  &kp EQUAL  &kp MINUS  &kp LBKT    &kp RBKT  &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &trans
+                                &trans     &trans     &trans      &trans    &trans    &trans
             >;
         };
 
@@ -146,6 +146,28 @@
 &trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans        &trans        &trans  &trans  &trans
                                         &trans        &trans        &trans          &trans  &trans        &trans
             >;
+        };
+
+        r_meta {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp RCMD  &kp RALT  &kp RCTRL  &kp RSHFT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans     &trans     &trans
+                        &trans  &trans  &trans    &trans  &trans    &trans
+            >;
+
+            label = "R_META";
+        };
+
+        l_meta {
+            bindings = <
+&trans  &trans     &trans     &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LCMD  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans    &trans    &trans    &trans  &trans  &trans
+            >;
+
+            label = "L_META";
         };
     };
 };
