@@ -15,9 +15,7 @@
     flavor = "tap-preferred";
 };
 
-&lt {
-    quick-tap-ms = <200>;
-};
+&lt { quick-tap-ms = <200>; };
 
 / {
     chosen {
@@ -68,10 +66,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB     &kp Q  &kp W  &kp E  &kp R  &kp T                         &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp ESCAPE  &kp A  &kp S  &kp D  &kp F  &kp G                         &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp RETURN
-&kp LSHIFT  &kp Z  &kp X  &kp C  &kp V  &kp B                         &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHIFT
-                          &mo 7  &mo 2  &mt LS(LA(LC(LCMD))) SPACE    &lt 5 SPACE  &mo 3  &mo 6
+&kp TAB     &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&kp ESCAPE  &kp A  &kp S  &kp D  &kp F  &kp G        &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp RETURN
+&kp LSHIFT  &kp Z  &kp X  &kp C  &kp V  &kp B        &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHIFT
+                          &mo 7  &mo 2  &kp SPACE    &lt 5 SPACE  &mo 3  &mo 6
             >;
         };
 
@@ -151,7 +149,7 @@
         r_meta {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp RCMD  &kp RALT  &kp RCTRL  &kp RSHFT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp RCMD  &kp RALT  &kp RCTRL  &kp RSHFT  &kp RS(RA(RC(RGUI)))
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans     &trans     &trans
                         &trans  &trans  &trans    &trans  &trans    &trans
             >;
@@ -161,10 +159,10 @@
 
         l_meta {
             bindings = <
-&trans  &trans     &trans     &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LCMD  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans     &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                              &trans    &trans    &trans    &trans  &trans  &trans
+&trans                &trans     &trans     &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LS(LA(LC(LGUI)))  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LCMD  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans                &trans     &trans     &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                            &trans    &trans    &trans    &trans  &trans  &trans
             >;
 
             label = "L_META";
