@@ -34,7 +34,7 @@
 
         sh_sp_bluetooth {
             bindings = <&mo 6>;
-            key-positions = <35 39>;
+            key-positions = <37 40>;
         };
     };
 
