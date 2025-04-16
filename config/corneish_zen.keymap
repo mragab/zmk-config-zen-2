@@ -24,17 +24,17 @@
 
         shifts_qwerty {
             bindings = <&to 0>;
-            key-positions = <24 35>;
+            key-positions = <36 38>;
         };
 
         thumbs_colemac {
             bindings = <&to 5>;
-            key-positions = <41 36>;
+            key-positions = <41 39>;
         };
 
         sh_sp_bluetooth {
             bindings = <&mo 6>;
-            key-positions = <37 40>;
+            key-positions = <37 36>;
         };
     };
 
